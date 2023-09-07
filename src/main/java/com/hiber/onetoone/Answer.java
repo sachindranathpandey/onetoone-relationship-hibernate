@@ -8,14 +8,15 @@ public class Answer {
 	@Id
 	private int ansId;
 	private String answer;
-	
-	@OneToOne
-	private Question question;
 	public Answer() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	public Answer(int ansId, String answer) {
+		super();
+		this.ansId = ansId;
+		this.answer = answer;
+	}
 	public int getAnsId() {
 		return ansId;
 	}
@@ -32,21 +33,8 @@ public class Answer {
 	public String toString() {
 		return "Answer [ansId=" + ansId + ", answer=" + answer + "]";
 	}
-	public Answer(int ansId, String answer, Question question) {
-		super();
-		this.ansId = ansId;
-		this.answer = answer;
-		this.question = question;
-	}
-
-	public Question getQuestion() {
-		return question;
-	}
-
-	public void setQuestion(Question question) {
-		this.question = question;
-	}
 	
+
 	
 	
 	

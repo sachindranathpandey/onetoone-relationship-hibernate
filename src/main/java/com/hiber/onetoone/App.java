@@ -17,7 +17,6 @@ public class App {
 		Answer answer1 = new Answer();
 		answer1.setAnsId(234);
 		answer1.setAnswer("Java is a programming language");
-		answer1.setQuestion(q1);
 		q1.setAnswer(answer1);
 
 		Question q2 = new Question();
@@ -26,7 +25,6 @@ public class App {
 		Answer answer2 = new Answer();
 		answer2.setAnsId(235);
 		answer2.setAnswer("Hibernate is a ORM tool");
-		answer2.setQuestion(q2);
 		q2.setAnswer(answer2);
 
 		Question q3 = new Question();
@@ -35,7 +33,6 @@ public class App {
 		Answer answer3 = new Answer();
 		answer3.setAnsId(236);
 		answer3.setAnswer("SQL is a programming Database language");
-		answer3.setQuestion(q3);
 		q3.setAnswer(answer3);
 
 		Session session = factory.openSession();
